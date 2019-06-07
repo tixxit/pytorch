@@ -1893,7 +1893,7 @@ def _unwrap_optional(x):
     return x
 
 
-unimplemented_math_ops = ["fsum", "isclose", "trunc", "hypot", "log2"]
+unimplemented_math_ops = ["fsum", "isclose", "trunc"]
 # lazily built to ensure the correct initialization order
 def _get_builtin_table():
     global _builtin_table
