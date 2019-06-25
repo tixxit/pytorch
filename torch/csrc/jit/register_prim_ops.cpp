@@ -240,6 +240,15 @@ RegisterOperators reg(
            };
          }),
      Operator(
+         "prim::GraphHolder() -> ()",
+         [](const Node* /* node */) {
+           return [](Stack& stack) {
+             // Returns an int so that we have an easy way to do graph traversal
+             push(stack, 1);
+             return 0;
+           };
+         }),
+     Operator(
          "prim::rangelist(int n) -> int[]",
          [](Stack& stack) {
            int64_t n;
