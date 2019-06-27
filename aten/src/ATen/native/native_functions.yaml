@@ -1585,6 +1585,7 @@
     CPU: relu
     CUDA: relu
     MkldnnCPU: mkldnn_relu
+    QuantizedCPU: quantized_relu
 
 - func: relu_(Tensor(a!) self) -> Tensor(a!)
   variants: function, method
